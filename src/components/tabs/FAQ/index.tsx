@@ -1,20 +1,19 @@
 import { useState, useEffect, type ChangeEvent, type MouseEvent } from "react";
 import classNames from "classnames";
-
 import Article from "./Article";
 import Category, { type ArticleProps } from "./Category.tsx";
 import slugify from "slugify";
 import { Transition } from "@tailwindui/react";
-import { useHelpDeskContext } from "../../../App.tsx";
 // biome-ignore lint/style/useImportType: <explanation>
 import React from "react";
+import { useHelpDeskContext } from "../../../App.tsx";
 
 interface FAQProps {
 	json: {
 		articles?: Array<{ title: string; body: string }>;
 		categories?: Array<any>;
 	};
-	onArticleRating: (rating: number) => void;
+	onArticleRating?: (rating: number) => void;
 	search?: boolean;
 	searchLabel?: string;
 	noResultsText?: string;

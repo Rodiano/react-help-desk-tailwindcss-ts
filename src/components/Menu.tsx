@@ -17,6 +17,7 @@ export const Menu: React.FC<MenuProps> = ({
 
 	return (
 		<button
+			title="Get help"
 			onClick={onToggle}
 			className={classNames("help-desk__menu", className)}
 			{...props}

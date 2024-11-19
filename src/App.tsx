@@ -1,12 +1,17 @@
 import { useState, useContext, createContext, type ReactNode } from "react";
 import classNames from "classnames";
-import Widgets from "./components/Widgets";
-import Widget from "./components/Widget";
-import { Menu } from "./components/Menu";
-import { Header } from "./components/Header";
-import Content from "./components/Content";
+
 // biome-ignore lint/style/useImportType: <explanation>
 import React from "react";
+import Content from "./components/Content";
+import { Header } from "./components/Header";
+import { Menu } from "./components/Menu";
+import Widgets from "./components/Widgets";
+import Widget from "./components/Widget";
+import "../src/assets/css/variables.scss";
+import "../src/assets/css/help-desk.scss";
+import "../src/assets/css/faq.scss";
+import "../src/assets/css/tutorials.scss";
 
 interface HelpDeskProps {
 	defaultTab: string;
@@ -97,8 +102,6 @@ HelpDesk.Menu = Menu;
 HelpDesk.Widgets = Widgets;
 HelpDesk.Widget = Widget;
 
-export default HelpDesk;
-
 export const useHelpDeskContext = () => {
 	const context = useContext(HelpDeskContext);
 	if (!context) {
@@ -106,3 +109,5 @@ export const useHelpDeskContext = () => {
 	}
 	return context;
 };
+
+export default HelpDesk;

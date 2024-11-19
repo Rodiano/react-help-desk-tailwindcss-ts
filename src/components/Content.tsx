@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import { useHelpDeskContext } from "../App";
 import { Children, isValidElement } from "react";
+import { useHelpDeskContext } from "../App";
 
 interface ContentProps extends React.HTMLAttributes<HTMLDivElement> {
 	children: React.ReactNode;

@@ -1,8 +1,8 @@
 // Replace your-framework with the name of your framework
 import type { Meta, StoryObj } from "@storybook/react";
-import HelpDesk from "./App";
-import { Book, Compass, HelpCircle, MessageSquare } from "react-feather";
+import { Book, HelpCircle, MessageSquare, Youtube } from "react-feather";
 import Tutorials from "./components/tabs/Tutorials";
+import { action } from "@storybook/addon-actions";
 
 import "../src/assets/main.css";
 
@@ -13,28 +13,33 @@ import "../src/assets/css/tutorials.scss";
 
 import FAQ from "./components/tabs/FAQ";
 import * as faqData from "./components/tabs/FAQ/faq.json";
-import React from "react";
+import HelpDesk from "./App";
 
 const meta: Meta<typeof HelpDesk> = {
 	component: HelpDesk,
+	title: "Help Center",
 };
 
-const walkthroughs = {
-	team: {
-		title: "Using the Dashboard",
-		thumbnail: "https://i.imgur.com/ItIdshs.png",
+const tutorials = {
+	1: {
+		title: "React tutorial for beginners",
+		videoUrl: "https://www.youtube.com/watch?v=SqcY0GlETPk",
+		body: "The coors light related to a Mango Beer befriends the loyal Guiness. Most people believe that the Hommel Bier bestows great honor upon a Hops Alligator Ale.",
 	},
-	avatar: {
-		title: "Upload to the gallery",
-		thumbnail: "https://i.imgur.com/T8DZKF7.png",
+	2: {
+		title: "React & Tailwind CSS Gallery",
+		videoUrl: "https://www.youtube.com/watch?v=FiGmAI5e91M",
+		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Nulla porttitor accumsan tincidunt.",
 	},
-	dashboard: {
-		title: "Embedding video",
-		thumbnail: "https://i.imgur.com/OUm6qKz.png",
+	3: {
+		title: "Embedding video width React and Gatsby",
+		videoUrl: "https://www.youtube.com/watch?v=xNRJwmlRBNU",
+		body: "A college-educated freight train finds lice on the Fosters, or the bullfrog brew beyond the Jamaica Red Ale borrows money from a malt. ",
 	},
-	goals: {
-		title: "Learn how to chat",
-		thumbnail: "https://i.imgur.com/Osp9Xjq.png",
+	4: {
+		title: "Learn tips & tricks for React",
+		videoUrl: "https://www.youtube.com/watch?v=b0IZo2Aho9Y",
+		body: "Indeed, another Sam Adams accidentally pees on a gratifying booze. A mug shares a shower with another Ipswich Ale. Now and then, an Ipswich Ale from the porter brainwashes the monkey bite. Indeed, the Long Trail Ale around the change tries to seduce some ESB.",
 	},
 };
 
@@ -61,14 +66,12 @@ export const Primary: Story = {
 								<Book width="20" height="20" />
 							</HelpDesk.Widget>
 							<HelpDesk.Widget label="Tutorials" tab="tutorials">
-								<Compass width="20" height="20" />
+								<Youtube width="20" height="20" />
 							</HelpDesk.Widget>
 							<HelpDesk.Widget
-								label="Live Chat Support"
-								// onClick={() =>
-								// 	action("Open the live chat box with their JS API")()
-								// }
-								// externalAction
+								label="Live Chat"
+								onClick={() => action("Live chat initializer if wanted")()}
+								externalAction
 							>
 								<MessageSquare width="20" height="20" />
 							</HelpDesk.Widget>
@@ -77,7 +80,7 @@ export const Primary: Story = {
 					</div>
 					<div data-name="tutorials">
 						<HelpDesk.Header title="Tutorials" />
-						<Tutorials walkthroughs={walkthroughs} />
+						<Tutorials walkthroughs={tutorials} />
 					</div>
 				</HelpDesk.Content>
 			</HelpDesk>

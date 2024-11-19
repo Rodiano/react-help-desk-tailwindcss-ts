@@ -5,11 +5,11 @@
 			"articles": [
 				{
 					"title": "What is React Help Desk?",
-					"body": "React Help Desk is a set of React components designed to be the building blocks of a help desk and self-support system for web apps.<br /><br /><iframe width=\"375\" height=\"211\" src=\"https://www.youtube-nocookie.com/embed/XxVg_s8xAms?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+					"body": "React Help Desk is a set of React components using TailwindCSS and TypeScript designed to be the building blocks of a help desk and self-support system for web apps."
 				},
 				{
-					"title": "Who built this?",
-					"body": "The front-end team at <a href=\"https://www.onlicar.com\">ONLICAR</a>.<br /><br /><img src=\"http://i.imgur.com/kKRw2Ar.gif\" />"
+					"title": "What do I do if I don't know what to do?",
+					"body": "Just do it!"
 				}
 			]
 		},
@@ -18,16 +18,16 @@
 			"articles": [
 				{
 					"title": "What widgets are available?",
-					"body": "Right now, there is an FAQ tab and a Tutorials tab.<br /><br />The FAQ tab accepts an object of categories and/or articles that are shown in a collapsible, searchable view.<br /><br />The Tutorials tab accepts an object of walkthroughs and displays the thumbnail in a grid allowing the user to replay walkthroughs."
+					"body": "Right now, there is an FAQ tab and a Tutorials tab.<br /><br />The FAQ tab accepts an object of categories and/or articles that are shown in a collapsible, searchable view.<br /><br />The Tutorials tab has of now been made so that it supports video tutorials or whatever you might feel like to replace it with."
 				}
 			]
 		},
 		{
-			"title": "Walkthroughs",
+			"title": "Live chat",
 			"articles": [
 				{
-					"title": "What are walkthroughs?",
-					"body": "Walkthroughs are live in-app tutorials that your users can play any time they want to learn how to do a task in your app.<br /><br />You can create text-based walkthroughs that show a popover next to elements or audio walkthroughs with graphics that are timed up with the voiceover."
+					"title": "What is live chat?",
+					"body": "Live chat is a feature that allows you to chat with a support agent in real-time. There a many ways to implement this. <strong><a href='https://www.google.com/search?q=live+chat' target='_blank'>Google live chat</a></strong> and se apps from Zendesk, LiveChat, LiveAgent and many more."
 				}
 			]
 		}

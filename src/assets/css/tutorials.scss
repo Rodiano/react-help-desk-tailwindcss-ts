@@ -10,25 +10,25 @@
 
 .help-desk__tutorials-help {
     margin: 0 25px 25px;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: center;
-    color: #AAA;
+    color: #555;
 }
 
 .help-desk__tutorial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    flex-basis: 47%;
-    min-height: 150px;
-    margin-bottom: 25px;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: #FFF;
-    font-size: 16px;
-    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: flex-start;
+    // flex-basis: 47%;
+    // min-height: 150px;
+    // margin-bottom: 25px;
+    // padding: 10px;
+    // border: none;
+    // outline: none;
+    // background: #FFF;
+    // font-size: 16px;
+    // text-align: center;
 
     &:hover, &:focus {
         .help-desk__tutorial-play {

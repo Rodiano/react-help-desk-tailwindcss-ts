@@ -6,7 +6,9 @@ interface WidgetsProps {
 }
 
 const Widgets: React.FC<WidgetsProps> = ({ children }) => (
-	<div className="help-desk__widgets">{children}</div>
+	<div className="help-desk__widgets grid grid-cols-3 gap-4 my-4">
+		{children}
+	</div>
 );
 
 export default Widgets;

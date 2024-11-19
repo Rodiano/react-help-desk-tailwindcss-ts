@@ -7,6 +7,7 @@ interface WidgetProps {
 	children: React.ReactNode;
 	label: string;
 	onSelectTab?: (tab: string) => void;
+	onClick?: () => void;
 	tab?: string;
 }
 
@@ -15,6 +16,7 @@ const Widget: React.FC<WidgetProps> = ({
 	children,
 	label,
 	tab,
+	onClick,
 }) => {
 	const { onClose, onSelectTab } = useHelpDeskContext();
 
@@ -24,10 +26,16 @@ const Widget: React.FC<WidgetProps> = ({
 		} else if (externalAction !== undefined && externalAction !== false) {
 			onClose();
 		}
+
+		onClick?.();
 	};
 
 	return (
-		<button type="button" className="help-desk__widget" onClick={handleClick}>
+		<button
+			type="button"
+			className="help-desk__widget flex justify-center flex-col items-center"
+			onClick={handleClick}
+		>
 			<div className="box">{children}</div>
 			<p>{label}</p>
 		</button>

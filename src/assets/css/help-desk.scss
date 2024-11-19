@@ -85,16 +85,9 @@
     }
 
     .help-desk__widgets {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 25px 25px 10px;
 
         .help-desk__widget {
-            width: 33.33%;
-            border: none;
-            outline: none;
-            background: none;
+
 
             &:hover, &:focus {
                 .box {

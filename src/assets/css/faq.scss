@@ -132,11 +132,11 @@
         margin-right: 0;
     }
     &.help-desk__thumb-rating--up {
-        border-color: --help-desk-success;
-        color: --help-desk-success;
+        border-color: variables.$help-desk-success;
+        color: variables.$help-desk-success;
 
         &:hover, &:focus, &.selected {
-            background: --help-desk-success;
+            background: variables.$help-desk-success;
             color: #FFF;
         }
         
