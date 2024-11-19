@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"lib": ["ES6", "DOM", "DOM.Iterable"],
+		"module": "ES6",
+		"skipLibCheck": true,
+		"allowJs": true,
+		/* Bundler mode */
+		"moduleResolution": "node",
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"resolveJsonModule": true,
+		/* Linting */
+		"strict": false,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		// "noUncheckedSideEffectImports": true
+		"types": ["vite/client"]
+	},
+	"include": ["src"]
+}

@@ -1,0 +1,39 @@
+ $help-desk-width : 450px !default;
+
+ $help-desk-border-radius: 3px !default;
+
+ $help-desk-menu-background :  #3a6449;
+
+ $help-desk-menu-color : #FFF;
+
+ $help-desk-header-background: $help-desk-menu-background !default;
+
+ $help-desk-content-background: $help-desk-menu-color;
+
+ $help-desk-header-color : $help-desk-menu-color;
+
+ $help-desk-content-background: $help-desk-header-background;
+
+ $help-desk-success-background: #39C5A5;
+
+ $help-desk-danger: #FF7C7C;
+
+ $help-desk-duration : 0.4s;
+
+ $help-desk-timing: cubic-bezier(0.55, 0, 0.1, 1);
+
+ $walkthrough-highlight-background: $help-desk-menu-background;
+
+ $walkthrough-highlight-color: $help-desk-menu-color;
+
+ $walkthrough-popover-background: $help-desk-menu-background;
+
+ $walkthrough-popover-color: $help-desk-menu-color;
+
+ $walkthrough-player-background: #E9E9E9;
+
+ $walkthrough-player-color: $help-desk-menu-background;
+
+ $walkthrough-player-border-radius: 3px;
+
+
