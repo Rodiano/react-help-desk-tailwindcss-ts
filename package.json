@@ -55,7 +55,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "packageManager": "yarn@4.5.1",
   "description": "Help desk component for React with Tailwindcss in TypeScript",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
