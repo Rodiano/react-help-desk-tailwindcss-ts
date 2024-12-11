@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-		"module": "commonjs" /* Specify what module code is generated. */,
+		"module": "ESNext" /* Specify what module code is generated. */,
 		"declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
 		"outDir": "dist",
 		"esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
@@ -12,7 +12,7 @@
 		"lib": ["ES6", "DOM", "DOM.Iterable"],
 		"allowJs": true,
 		/* Bundler mode */
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"allowImportingTsExtensions": true,
 		"isolatedModules": true,
 		"allowSyntheticDefaultImports": true,
@@ -21,10 +21,12 @@
 		"jsx": "react-jsx",
 		"resolveJsonModule": true,
 		/* Linting */
-		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 		// "noUncheckedSideEffectImports": true
-		"types": ["vite/client"]
+		"types": ["vite/client"],
+		"typeRoots": ["./dist/index.d.ts", "node_modules/@types"]
 	},
 	"include": ["src"]
 }
